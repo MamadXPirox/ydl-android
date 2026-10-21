@@ -70,7 +70,7 @@
     <string name="remove">حذف</string>
     <string name="logs">لاگ‌ها</string>
     <string name="close">بستن</string>
-    <string name="saved_to">ذخیره شد در Downloads/YDL Android</string>
+    <string name="saved_to">ذخیره شد در Downloads/YDL GUI</string>
 
     <string name="tools_title">دستور دلخواه</string>
     <string name="tools_desc">هر دستور yt-dlp را اجرا کنید. FFmpeg همراه برنامه است و گزینه‌های پردازش هم کار می‌کنند. آدرس را داخل خود دستور بنویسید.</string>
@@ -115,4 +115,17 @@
     <string name="engine_notice">سایت‌ها زود‌به‌زود تغییر می‌کنند. اگر دانلود خطا داد، اول yt-dlp را به‌روز کنید.</string>
     <string name="error_generic">مشکلی پیش آمد</string>
     <string name="error_no_url">لطفاً یک لینک معتبر وارد کنید</string>
+
+    <string name="update_title">به‌روزرسانی برنامه</string>
+    <string name="update_current">نسخه فعلی: %1$s</string>
+    <string name="update_check">بررسی به‌روزرسانی</string>
+    <string name="update_checking">در حال بررسی…</string>
+    <string name="update_latest">شما از آخرین نسخه استفاده می‌کنید</string>
+    <string name="update_available">نسخه %1$s در دسترس است</string>
+    <string name="update_download">دانلود و نصب</string>
+    <string name="update_downloading">در حال دانلود… %1$d%%</string>
+    <string name="update_permission">اجازه نصب برنامه را به این برنامه بدهید، برگردید و دوباره دکمه را بزنید.</string>
+    <string name="update_failed">بررسی به‌روزرسانی ناموفق بود: %1$s</string>
+    <string name="update_no_apk">آخرین نسخه فایل APK ندارد</string>
+    <string name="update_no_repo">منبع به‌روزرسانی تنظیم نشده است</string>
 </resources>

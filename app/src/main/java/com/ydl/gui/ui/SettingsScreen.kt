@@ -78,6 +78,8 @@ fun SettingsScreen(vm: MainViewModel) {
             ExtraOptionsEditor(s.defaultExtra, { e -> store.update { it.copy(defaultExtra = e) } }, full = false)
         }
 
+        UpdateSection()
+
         SectionCard(stringResource(R.string.set_engine)) {
             Text(stringResource(R.string.engine_version, version))
             ChoiceChips(listOf("nightly", "master"), if (s.updateChannel == "stable") "" else s.updateChannel,

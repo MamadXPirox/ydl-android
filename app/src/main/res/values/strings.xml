@@ -70,7 +70,7 @@
     <string name="remove">Remove</string>
     <string name="logs">Logs</string>
     <string name="close">Close</string>
-    <string name="saved_to">Saved to Downloads/YDL Android</string>
+    <string name="saved_to">Saved to Downloads/YDL GUI</string>
 
     <string name="tools_title">Custom command</string>
     <string name="tools_desc">Run any yt-dlp command. FFmpeg is bundled, so post-processing options work too. Put the URL inside the command.</string>
@@ -115,4 +115,17 @@
     <string name="engine_notice">Sites change often. If a download fails, update yt-dlp first.</string>
     <string name="error_generic">Something went wrong</string>
     <string name="error_no_url">Please enter a valid link</string>
+
+    <string name="update_title">App update</string>
+    <string name="update_current">Current version: %1$s</string>
+    <string name="update_check">Check for updates</string>
+    <string name="update_checking">Checking for updates…</string>
+    <string name="update_latest">You are on the latest version</string>
+    <string name="update_available">Version %1$s is available</string>
+    <string name="update_download">Download &amp; install</string>
+    <string name="update_downloading">Downloading… %1$d%%</string>
+    <string name="update_permission">Allow this app to install apps, go back, then tap the button again.</string>
+    <string name="update_failed">Update check failed: %1$s</string>
+    <string name="update_no_apk">The latest release has no APK file</string>
+    <string name="update_no_repo">Update source is not configured</string>
 </resources>

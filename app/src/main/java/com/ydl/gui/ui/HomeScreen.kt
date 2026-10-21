@@ -24,6 +24,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.ydl.gui.R
 import com.ydl.gui.YdlApp
@@ -55,11 +56,22 @@ private fun LandingScreen(vm: MainViewModel, st: ParseState) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-            Icon(Icons.Rounded.SmartDisplay, null, Modifier.size(56.dp), tint = MaterialTheme.colorScheme.onBackground)
-            Text("GUI", style = MaterialTheme.typography.displaySmall)
-        }
-        Spacer(Modifier.height(12.dp))
+        Text(
+            "YDL For Android",
+            style = MaterialTheme.typography.headlineLarge,
+            fontWeight = androidx.compose.ui.text.font.FontWeight.ExtraBold,
+            letterSpacing = 1.sp,
+            color = MaterialTheme.colorScheme.onBackground,
+            textAlign = TextAlign.Center,
+        )
+        Spacer(Modifier.height(4.dp))
+        Text(
+            "a multimedia downloader For Android",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.55f),
+            textAlign = TextAlign.Center,
+        )
+        Spacer(Modifier.height(14.dp))
         Text(stringResource(R.string.home_tagline), color = MaterialTheme.colorScheme.onSurfaceVariant, textAlign = TextAlign.Center)
         Spacer(Modifier.height(24.dp))
 
