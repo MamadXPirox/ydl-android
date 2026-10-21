@@ -59,12 +59,12 @@ fun SettingsScreen(vm: MainViewModel) {
             Slider(value = s.concurrentFragments.toFloat(), onValueChange = { v -> store.update { it.copy(concurrentFragments = v.roundToInt()) } }, valueRange = 1f..16f, steps = 14, enabled = !s.useAria2c)
             SwitchRow(stringResource(R.string.set_aria2c), s.useAria2c) { v -> store.update { it.copy(useAria2c = v) } }
             SwitchRow(stringResource(R.string.set_no_overwrites), s.noOverwrites) { v -> store.update { it.copy(noOverwrites = v) } }
-            LabeledField(stringResource(R.string.set_template), s.outputTemplate) { v -> store.update { it.copy(outputTemplate = v) } }
+            LabeledField(stringResource(R.string.set_template), s.outputTemplate, onChange = { v -> store.update { it.copy(outputTemplate = v) } })
             Text(stringResource(R.string.saved_to), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
 
         SectionCard(stringResource(R.string.set_network)) {
-            LabeledField(stringResource(R.string.set_proxy), s.proxy) { v -> store.update { it.copy(proxy = v) } }
+            LabeledField(stringResource(R.string.set_proxy), s.proxy, onChange = { v -> store.update { it.copy(proxy = v) } })
             Text(stringResource(R.string.set_cookies), style = MaterialTheme.typography.labelMedium)
             Text(if (cookiesPresent) stringResource(R.string.cookies_loaded) else stringResource(R.string.cookies_none),
                 style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)

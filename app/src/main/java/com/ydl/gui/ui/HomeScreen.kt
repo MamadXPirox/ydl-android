@@ -238,8 +238,8 @@ private fun ResultScreen(vm: MainViewModel, st: ParseState.Ready) {
                 SectionCard {
                     SwitchRow(stringResource(R.string.trim), sel.trimOn) { on -> vm.select { it.copy(trimOn = on) } }
                     if (sel.trimOn) Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Box(Modifier.weight(1f)) { LabeledField(stringResource(R.string.trim_start), sel.start) { v -> vm.select { it.copy(start = v) } } }
-                        Box(Modifier.weight(1f)) { LabeledField(stringResource(R.string.trim_end), sel.end) { v -> vm.select { it.copy(end = v) } } }
+                        Box(Modifier.weight(1f)) { LabeledField(stringResource(R.string.trim_start), sel.start, onChange = { v -> vm.select { it.copy(start = v) } }) }
+                        Box(Modifier.weight(1f)) { LabeledField(stringResource(R.string.trim_end), sel.end, onChange = { v -> vm.select { it.copy(end = v) } }) }
                     }
                     if (info.isLive) SwitchRow(stringResource(R.string.live_from_start), sel.liveFromStart) { on -> vm.select { it.copy(liveFromStart = on) } }
                 }

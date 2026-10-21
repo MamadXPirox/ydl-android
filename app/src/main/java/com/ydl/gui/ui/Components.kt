@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import com.ydl.gui.R
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -58,30 +59,29 @@ fun ExtraOptionsEditor(
     onChange: (com.ydl.gui.core.ExtraOptions) -> Unit,
     full: Boolean,
 ) {
-    val r = com.ydl.gui.R.string
     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        SwitchRow(stringResource(r.opt_embed_metadata), e.embedMetadata) { onChange(e.copy(embedMetadata = it)) }
-        SwitchRow(stringResource(r.opt_embed_thumbnail), e.embedThumbnail) { onChange(e.copy(embedThumbnail = it)) }
-        SwitchRow(stringResource(r.opt_embed_subs), e.embedSubs) { onChange(e.copy(embedSubs = it)) }
-        SwitchRow(stringResource(r.opt_embed_chapters), e.embedChapters) { onChange(e.copy(embedChapters = it)) }
-        SwitchRow(stringResource(r.opt_sponsorblock), e.sponsorblockRemove) { onChange(e.copy(sponsorblockRemove = it)) }
-        SwitchRow(stringResource(r.opt_write_thumbnail), e.writeThumbnail) { onChange(e.copy(writeThumbnail = it)) }
-        SwitchRow(stringResource(r.opt_write_description), e.writeDescription) { onChange(e.copy(writeDescription = it)) }
+        SwitchRow(stringResource(R.string.opt_embed_metadata), e.embedMetadata) { onChange(e.copy(embedMetadata = it)) }
+        SwitchRow(stringResource(R.string.opt_embed_thumbnail), e.embedThumbnail) { onChange(e.copy(embedThumbnail = it)) }
+        SwitchRow(stringResource(R.string.opt_embed_subs), e.embedSubs) { onChange(e.copy(embedSubs = it)) }
+        SwitchRow(stringResource(R.string.opt_embed_chapters), e.embedChapters) { onChange(e.copy(embedChapters = it)) }
+        SwitchRow(stringResource(R.string.opt_sponsorblock), e.sponsorblockRemove) { onChange(e.copy(sponsorblockRemove = it)) }
+        SwitchRow(stringResource(R.string.opt_write_thumbnail), e.writeThumbnail) { onChange(e.copy(writeThumbnail = it)) }
+        SwitchRow(stringResource(R.string.opt_write_description), e.writeDescription) { onChange(e.copy(writeDescription = it)) }
         if (full) {
-            SwitchRow(stringResource(r.opt_extract_audio), e.extractAudio) { onChange(e.copy(extractAudio = it)) }
+            SwitchRow(stringResource(R.string.opt_extract_audio), e.extractAudio) { onChange(e.copy(extractAudio = it)) }
             if (e.extractAudio) {
-                Text(stringResource(r.opt_audio_format), style = MaterialTheme.typography.labelMedium)
+                Text(stringResource(R.string.opt_audio_format), style = MaterialTheme.typography.labelMedium)
                 ChoiceChips(listOf("mp3", "m4a", "opus", "aac", "flac", "wav", "vorbis"), e.audioConvertFormat,
-                    { onChange(e.copy(audioConvertFormat = it)) }, offLabel = stringResource(r.auto))
+                    { onChange(e.copy(audioConvertFormat = it)) }, offLabel = stringResource(R.string.auto))
             }
-            SwitchRow(stringResource(r.opt_no_merge), e.noMerge) { onChange(e.copy(noMerge = it)) }
-            Text(stringResource(r.opt_recode), style = MaterialTheme.typography.labelMedium)
-            ChoiceChips(listOf("mp4", "mkv", "webm", "avi", "mov", "flv", "gif"), e.recodeFormat) { onChange(e.copy(recodeFormat = it)) }
-            Text(stringResource(r.opt_remux), style = MaterialTheme.typography.labelMedium)
-            ChoiceChips(listOf("mp4", "mkv", "webm", "mov", "avi"), e.remuxFormat) { onChange(e.copy(remuxFormat = it)) }
-            LabeledField(stringResource(r.opt_limit_rate), e.limitRate) { onChange(e.copy(limitRate = it)) }
-            LabeledField(stringResource(r.opt_ffmpeg_args), e.ffmpegArgs) { onChange(e.copy(ffmpegArgs = it)) }
-            LabeledField(stringResource(r.opt_custom_args), e.customArgs, singleLine = false) { onChange(e.copy(customArgs = it)) }
+            SwitchRow(stringResource(R.string.opt_no_merge), e.noMerge) { onChange(e.copy(noMerge = it)) }
+            Text(stringResource(R.string.opt_recode), style = MaterialTheme.typography.labelMedium)
+            ChoiceChips(listOf("mp4", "mkv", "webm", "avi", "mov", "flv", "gif"), e.recodeFormat, onSelect = { onChange(e.copy(recodeFormat = it)) })
+            Text(stringResource(R.string.opt_remux), style = MaterialTheme.typography.labelMedium)
+            ChoiceChips(listOf("mp4", "mkv", "webm", "mov", "avi"), e.remuxFormat, onSelect = { onChange(e.copy(remuxFormat = it)) })
+            LabeledField(stringResource(R.string.opt_limit_rate), e.limitRate, onChange = { onChange(e.copy(limitRate = it)) })
+            LabeledField(stringResource(R.string.opt_ffmpeg_args), e.ffmpegArgs, onChange = { onChange(e.copy(ffmpegArgs = it)) })
+            LabeledField(stringResource(R.string.opt_custom_args), e.customArgs, onChange = { onChange(e.copy(customArgs = it)) }, singleLine = false)
         }
     }
 }
