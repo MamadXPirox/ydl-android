@@ -13,12 +13,29 @@ android {
         applicationId = "com.ydl.gui"
         minSdk = 29          // Scoped storage / MediaStore.Downloads
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.1.0"
+        // For releases, CI passes the git tag (v1.0.1 -> "1.0.1") and an increasing build number.
+        versionCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 1
+        versionName = System.getenv("VERSION_NAME") ?: "1.0.0"
+    }
+
+    // Fixed signing key (provided by CI secrets) so updates can be installed over older versions.
+    signingConfigs {
+        create("release") {
+            val keystorePath = System.getenv("KEYSTORE_FILE")
+            if (keystorePath != null) {
+                storeFile = file(keystorePath)
+                storePassword = System.getenv("KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("KEY_ALIAS")
+                keyPassword = System.getenv("KEY_PASSWORD")
+            }
+        }
     }
 
     buildTypes {
         release {
+            // Falls back to the debug key for local builds without the secrets
+            signingConfig = if (System.getenv("KEYSTORE_FILE") != null)
+                signingConfigs.getByName("release") else signingConfigs.getByName("debug")
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
