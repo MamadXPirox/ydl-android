@@ -8,7 +8,7 @@ import android.provider.MediaStore
 import android.webkit.MimeTypeMap
 import java.io.File
 
-/** Copies finished files from the app's private temp dir into the public Downloads/YDL GUI folder. */
+/** Copies finished files from the app's private temp dir into the public Downloads/YDL Android folder. */
 object MediaExport {
     const val FOLDER = "YDL Android"
 
