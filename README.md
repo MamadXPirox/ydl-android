@@ -41,8 +41,8 @@ Requires **Android 10 (API 29)** or newer. Pick the `arm64-v8a` APK for most mod
 ## Build from source
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/MamadXPirox/ydl-android.git
+cd ydl-android
 ./gradlew assembleDebug
 ```
 
