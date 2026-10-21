@@ -70,7 +70,7 @@
     <string name="remove">Remove</string>
     <string name="logs">Logs</string>
     <string name="close">Close</string>
-    <string name="saved_to">Saved to Downloads/YDL GUI</string>
+    <string name="saved_to">Saved to Downloads/YDL Android</string>
 
     <string name="tools_title">Custom command</string>
     <string name="tools_desc">Run any yt-dlp command. FFmpeg is bundled, so post-processing options work too. Put the URL inside the command.</string>
