@@ -70,7 +70,7 @@
     <string name="remove">حذف</string>
     <string name="logs">لاگ‌ها</string>
     <string name="close">بستن</string>
-    <string name="saved_to">ذخیره شد در Downloads/YDL GUI</string>
+    <string name="saved_to">ذخیره شد در Downloads/YDL Android</string>
 
     <string name="tools_title">دستور دلخواه</string>
     <string name="tools_desc">هر دستور yt-dlp را اجرا کنید. FFmpeg همراه برنامه است و گزینه‌های پردازش هم کار می‌کنند. آدرس را داخل خود دستور بنویسید.</string>
