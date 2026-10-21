@@ -21,7 +21,7 @@ import java.net.URL
 object AppUpdater {
 
     /** TODO: put your GitHub "owner/repository" here, e.g. "john/ydl-android". */
-    const val REPO = "OWNER/REPO"
+    const val REPO = "MamadXPirox/ydl-android"
 
     data class UpdateInfo(val version: String, val notes: String, val apkUrl: String, val sizeBytes: Long, val pageUrl: String)
 
