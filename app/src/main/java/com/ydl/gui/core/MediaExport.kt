@@ -10,7 +10,7 @@ import java.io.File
 
 /** Copies finished files from the app's private temp dir into the public Downloads/YDL GUI folder. */
 object MediaExport {
-    const val FOLDER = "YDL GUI"
+    const val FOLDER = "YDL Android"
 
     fun save(ctx: Context, file: File): Uri? {
         val ext = file.extension.lowercase()
