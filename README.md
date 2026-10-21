@@ -31,7 +31,7 @@ Paste a link, pick a quality, and download — with access to the full power of 
 - Dark / light theme, English and Persian (RTL) UI
 - No ads, no tracking, no analytics
 
-Files are saved to `Downloads/YDL GUI`.
+Files are saved to `Downloads/YDL Android`.
 
 ## Download
 
