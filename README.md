@@ -5,16 +5,8 @@
 [youtubedl-android](https://github.com/yausername/youtubedl-android) داخل APK قرار می‌گیرد
 (Python + yt-dlp + FFmpeg + aria2c)، پس نیازی به نصب چیز دیگری نیست.
 
-## ساخت APK
 
-### روش ۱: GitHub Actions (بدون نیاز به نصب چیزی)
-1. پوشه را در یک ریپوی GitHub آپلود کنید.
-2. تب **Actions ← Build APK ← Run workflow**.
-3. بعد از چند دقیقه فایل APK را از بخش Artifacts دانلود کنید.
 
-### روش ۲: Android Studio
-`File ▸ Open` را روی همین پوشه بزنید، صبر کنید Sync تمام شود و `Run ▸ Run 'app'`.
-یا در ترمینال: `./gradlew assembleDebug` (خروجی: `app/build/outputs/apk/debug/`).
 
 ## قابلیت‌ها
 - تحلیل لینک (ویدیو و پلی‌لیست) و نمایش فرمت‌ها، زیرنویس‌ها و فصل‌ها
