@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">YDL GUI</string>
+    <string name="app_name">YDL Android</string>
     <string name="tab_home">خانه</string>
     <string name="tab_downloads">دانلودها</string>
     <string name="tab_tools">ابزارها</string>
