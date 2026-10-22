@@ -1,7 +1,10 @@
 # YDL Android
 
-A modern Android GUI for **[yt-dlp](https://github.com/yt-dlp/yt-dlp) + FFmpeg**.
-Paste a link, pick a quality, and download — with access to the full power of yt-dlp when you need it.
+A modern Android GUI for **[yt-dlp](https://github.com/yt-dlp/yt-dlp)**.
+Paste a link, pick a quality, and download videos and audios From YouTube, TikTok, SoundCloud
+And over [1000+ websites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
+with access to the full power of yt-dlp when you need it.
+
 
 > Inspired by the desktop app [imsyy/yt-dlp-gui](https://github.com/imsyy/yt-dlp-gui).
 > This is an independent Android implementation written in Kotlin + Jetpack Compose.
