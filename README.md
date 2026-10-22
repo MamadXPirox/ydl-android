@@ -16,7 +16,6 @@ Paste a link, pick a quality, and download — with access to the full power of 
 ## Features
 
 - **Thousands of sites** supported through yt-dlp (YouTube, Instagram, X, Bilibili, and more)
-- **In-app update check** — Settings → Check for updates
 - **Video & playlist parsing** with format, subtitle and chapter info
 - **Quality presets** (Best / 2160p … 360p) or **manual** video/audio stream selection
 - **Modes:** video + audio, video only, audio only (mp3, m4a, opus, flac, wav…)
@@ -31,6 +30,7 @@ Paste a link, pick a quality, and download — with access to the full power of 
 - **Share to app:** send a link from your browser or any app straight into YDL Android
 - Dark / light theme, English and Persian (RTL) UI
 - No ads, no tracking, no analytics
+- **In-app update check** — Settings → Check for updates
 
 Files are saved to `Downloads/YDL Android`.
 
