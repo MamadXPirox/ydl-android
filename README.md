@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="app/src/main/res/drawable-nodpi/ic_launcher_foreground.png" width="80" height="80" alt="yt-dlp GUI">
+<img src="app/src/main/res/drawable-nodpi/ic_launcher_foreground.png" width="200" height="200" alt="yt-dlp GUI">
 
 # YDL Android
 
