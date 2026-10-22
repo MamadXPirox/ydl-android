@@ -1,10 +1,17 @@
+<div align="center">
+
+<img src="app/src/main/res/drawable-nodpi/ic_launcher_foreground.png" width="80" height="80" alt="yt-dlp GUI">
+
 # YDL Android
 
-A modern Android GUI for **[yt-dlp](https://github.com/yt-dlp/yt-dlp)**.
-Paste a link, pick a quality, and download videos and audios From YouTube, TikTok, SoundCloud
-And over [1000+ websites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
-with access to the full power of yt-dlp when you need it.
+A modern, beautiful Android GUI for [yt-dlp](https://github.com/yt-dlp/yt-dlp).
 
+Download videos and audios from YouTube, TikTok, SoundCloud, Twitter/X and [1000+ websites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) with ease.
+
+[![License](https://img.shields.io/github/license/MamadXPirox/ydl-android?color=f0f0f0&labelColor=555555)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/MamadXPirox/ydl-android?color=f0f0f0&labelColor=555555)](https://github.com/imsyy/yt-dlp-gui/releases)
+[![Stars](https://img.shields.io/github/stars/MamadXPirox/ydl-android?style=flat&color=f0f0f0&labelColor=555555)](https://github.com/imsyy/yt-dlp-gui)
+[![Downloads](https://img.shields.io/github/downloads/MamadXPirox/ydl-android/total?color=f0f0f0&labelColor=555555)](https://github.com/imsyy/yt-dlp-gui/releases)
 
 > Inspired by the desktop app [imsyy/yt-dlp-gui](https://github.com/imsyy/yt-dlp-gui).
 > This is an independent Android implementation written in Kotlin + Jetpack Compose.
@@ -15,6 +22,9 @@ with access to the full power of yt-dlp when you need it.
   <img src="docs/screenshot-downloads.png" width="240" />
 </p>
 -->
+
+
+</div>
 
 ## Features
 
